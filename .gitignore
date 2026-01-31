@@ -1,0 +1,60 @@
+# -------------------------
+# Python / Virtual Envs
+# -------------------------
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+# -------------------------
+# OS / Editor junk
+# -------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vscode/
+.idea/
+
+# -------------------------
+# Secrets / Environment
+# -------------------------
+.env
+.env.*
+secrets.toml
+.streamlit/secrets.toml
+
+
+
+# -------------------------
+# Logs / temp
+# -------------------------
+*.log
+*.tmp
+
+# -------------------------
+# Data / artifacts (optional)
+# -------------------------
+*.pkl
+*.pickle
+
+# If you later persist FAISS indexes locally, ignore these:
+faiss_index/
+*.faiss
+*.index
+
+# Jupyter
+.ipynb_checkpoints/
+
+# -------------------------
+# R / misc (if any)
+# -------------------------
+.Rhistory

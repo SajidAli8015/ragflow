@@ -9,7 +9,6 @@ It supports document-grounded conversations, multi-chat sessions, streaming resp
 
 ![RAGFlow Chat UI](assets/ui.png)
 
-> Save your screenshot as `assets/ui.png` to render correctly on GitHub.
 
 ---
 

@@ -1,5 +1,14 @@
 # 🧠 RagFlow
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11%2B-blue?logo=python" />
+  <img src="https://img.shields.io/badge/Streamlit-UI-red?logo=streamlit" />
+  <img src="https://img.shields.io/badge/RAG-FAISS%20%7C%20LangChain-brightgreen" />
+  <img src="https://img.shields.io/badge/LLM-Google%20Gemini-orange" />
+  <img src="https://img.shields.io/badge/Status-Active%20Development-success" />
+</p>
+
+
 RAGFlow Chat is a clean, modular, production-style conversational AI application built with **Retrieval-Augmented Generation (RAG)**.  
 It supports document-grounded conversations, multi-chat sessions, streaming responses, persona selection, and multilingual output — with a **cleanly separated backend and frontend**.
 

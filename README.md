@@ -1,5 +1,4 @@
 # 🧠 RagFlow
-
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.11%2B-blue?logo=python" />
   <img src="https://img.shields.io/badge/Streamlit-UI-red?logo=streamlit" />
@@ -8,52 +7,55 @@
   <img src="https://img.shields.io/badge/Status-Active%20Development-success" />
 </p>
 
+**RAGFlow** is a clean, modular, production-style conversational AI application built with  
+**Retrieval-Augmented Generation (RAG)**.
 
-RAGFlow Chat is a clean, modular, production-style conversational AI application built with **Retrieval-Augmented Generation (RAG)**.  
-It supports document-grounded conversations, multi-chat sessions, streaming responses, persona selection, and multilingual output — with a **cleanly separated backend and frontend**.
+It enables **document-grounded conversations**, **multi-chat sessions**, **streaming responses**, **persona selection**, and **multilingual output** — with a **cleanly separated backend and frontend**.
 
----
+
 
 ## 🖼️ Application Preview
 
-![RAGFlow Chat UI](assets/ui.png)
+![RAGFlow UI](assets/ui.png)
 
 
----
 
 ## ✨ Key Features
 
-- 🔹 **Clean Architecture**
-  - Fully separated backend and frontend
-  - Backend can run independently (CLI / future API)
-- 🔹 **Retrieval-Augmented Generation (RAG)**
-  - Upload documents (PDF, TXT, DOCX, CSV)
-  - Text chunking, embeddings, and FAISS vector search
-  - Per-chat RAG isolation
-- 🔹 **Multi-Chat Sessions**
-  - Create, switch, and rename chats
-  - Each chat maintains its own history and context
-- 🔹 **Streaming Responses**
-  - Token-by-token streaming for real-time UX
-- 🔹 **Persona Selection**
+### 🏗 Clean Architecture
+- Fully separated **backend** and **frontend**
+- Backend can run independently (CLI today, API-ready for the future)
+- Clear service boundaries for maintainability and scaling
+
+
+
+### 📄 Retrieval-Augmented Generation (RAG)
+- Upload documents: **PDF, TXT, DOCX, CSV**
+- Automatic text extraction, chunking, and embedding
+- **FAISS-based vector search** for fast, relevant retrieval
+- Per-chat document isolation (no context leakage)
+
+
+
+### 💬 Chat Experience
+- Multi-chat sessions (create, switch, rename)
+- Each chat maintains its **own history and context**
+- Token-by-token **streaming responses** for real-time UX
+
+
+
+### 🎭 Personalization & Language
+- Built-in personas:
   - Friendly Assistant
   - Formal Expert
   - Tech Support
-- 🔹 **Multilingual Support**
+- Multilingual responses:
   - English
   - Urdu
   - Arabic
-- 🔹 **User Controls**
-  - Enable / disable RAG per chat
-  - Reset messages
-  - Download chat history as `.txt`
-- 🔹 **Backend-Only Interfaces**
-  - Chat CLI
-  - RAG CLI (document ingestion + querying without UI)
 
----
 
-## 🗂️ Project Structure (with file descriptions)
+## 🗂️ Project Structure 
 
 ```text
 ragflow-chat/
@@ -87,7 +89,7 @@ ragflow-chat/
 └── README.md                      # Project documentation
 ```
 
----
+
 
 ## 🧰 Tech Stack
 
@@ -98,7 +100,7 @@ ragflow-chat/
 - **FAISS** (vector search)
 - **PyPDF2 / python-docx / pandas** (document parsing)
 
----
+
 
 ## ⚙️ Setup
 
@@ -137,7 +139,7 @@ GOOGLE_API_KEY = "YOUR_GOOGLE_API_KEY"
 
 > This file is ignored by Git and should stay local.
 
----
+
 
 ## ▶️ Run the Streamlit UI
 
@@ -149,7 +151,7 @@ Open:
 
 - http://localhost:8501
 
----
+
 
 ## 💬 Run Chat CLI (backend-only)
 
@@ -159,7 +161,7 @@ Runs the chatbot in your terminal (no Streamlit).
 python scripts/chat_cli.py
 ```
 
----
+
 
 ## 🧪 Run RAG CLI (backend-only)
 

@@ -1,6 +1,13 @@
 # scripts/chat_cli.py
-
 import os
+import sys
+from pathlib import Path
+
+# --- Fix import path ---
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(PROJECT_ROOT))
+
+
 
 # --- Load secrets from .streamlit/secrets.toml ---
 try:
@@ -33,10 +40,11 @@ def main():
     # Step 1: Initialize model
     model = get_chat_model()
 
+    
     # Step 2: Build LangGraph
     graph = build_graph(model)
 
-    # Step 3: Create ChatService (no RAG for now)
+    # Step 3: Create ChatService (no RAG)
     chat_service = ChatService(graph)
 
     session_id = "cli-session"
